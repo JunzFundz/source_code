@@ -1,0 +1,26 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.nav-bar {
+    grid-column: 1/11;
+    height: 10vh;
+    margin-bottom: 10px;
+    background-color: rgb(203, 203, 203);
+}
+
+.body{
+    grid-column: 1/11;
+    height: 95vh;
+    background-color: aquamarine;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-inline: 20px;
+    line-height: 40px;
+    float: right;
+}
+
