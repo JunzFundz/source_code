@@ -9,32 +9,60 @@
 </head>
 
 <body>
-    <!-- mother -->
+
     <div class="container">
 
-        <div class="nav-bar">
+        <div class="nav-bar" >
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact me</a></li>
+                    <li><a href="#nav-bar">Home</a></li>
+                    <li><a href="#about-page">About</a></li>
+                    <li><a href="#contact-me" >Contact me</a></li>
                     <li>My portfolio</li>
+                    <li onclick="nav()">&#x2630;</li>
                 </ul>
             </nav>
+
+            <div class="second-nav" id="show">
+                <div><a href="#nav-bar">Home</a></div>
+                <div><a href="about.html">About</a></div>
+                <div><a href="contact.html">Contact me</a></div>
+            </div>
+
         </div>
 
-        <div class="image">
+        <div class="image" id="nav-bar">
             <img src="449289459_435261736046077_8827714122621250348_n__2_-removebg-preview.png" alt="">
         </div>
 
-        <div class="text">
+        <div class="text" id="text">
             <p>
                 Hi i'am junz <br><br>
                 <span>Bachelor of janitor</span>
             </p>
         </div>
+
+        <div class="about-page" id="about-page">
+            <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus aut eum cumque odit fugit officiis voluptates expedita dignissimos, reiciendis minus itaque numquam vero nesciunt ullam exercitationem tenetur quidem harum dolore?</p>
+        </div>
+
+        <div class="contact-me" id="contact-me">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet accusantium cumque maiores explicabo sapiente modi tempore, similique doloremque eaque reiciendis, quaerat nostrum sit, vero asperiores veritatis repellat delectus labore enim!</p>
+        </div>
+
     </div>
 
 </body>
+<script>
+    function nav() {
+        let x = document.getElementById('show');
+
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
 
 </html>
